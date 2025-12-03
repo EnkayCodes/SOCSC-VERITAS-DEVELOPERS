@@ -24,8 +24,8 @@ Complete Move packages you can explore, clone, and modify.
 
 ---
 
-###  Repository Structure
-## To get started follow these steps
+##  Repository Structure
+### To get started follow these steps
 - [1a. Install SUI on windows](./1a-installing-sui-on-windows/README.md)
 
 ---
