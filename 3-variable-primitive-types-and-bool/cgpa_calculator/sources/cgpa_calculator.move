@@ -1,4 +1,20 @@
 module cgpa_calculator::cgpa_calculator;
+use std::debug;
+
+// Helper: convert score to grade point
+    fun grade_point(score : u8) : u8{
+        if(score >= 70){
+            5
+        }else if(score >= 60){
+            4
+        }else if(score >= 50){
+            3
+        }else if(score >= 40){
+            2
+        }else{
+            0
+        }
+    }
 
 public fun calculate_cgpa(){
     // Step 1: Store scores as u8
@@ -18,32 +34,19 @@ public fun calculate_cgpa(){
     //compute total score
     let total_score = score1_u16 + score2_u16 + score3_u16 + score4_u16 + score5_u16;
 
-    // Helper: convert score to grade point
-    fun grade_point(score : u8) : u8{
-        if(score >= 70){
-            5
-        }else if(score >= 60){
-            4
-        }else if(score >= 50){
-            3
-        }else if(score >= 40){
-            2
-        }else{
-            0
-        }
-    }
 
     // Step 4: Convert scores into grade points (GP)
     let gp1 : u8 = grade_point(score1);
     let gp2 : u8 = grade_point(score2);
     let gp3 : u8 = grade_point(score3);
     let gp4 : u8 = grade_point(score4);
+    let gp5 : u8 = grade_point(score5);
 
     // Each course credit units
     let credit_unit : u16 = 5;
 
     // Step 5: Total grade points (cast GPs to u16 to multiply)
-    total_grade_points = (gp1 as u16) * credit_unit + 
+    let total_grade_points = (gp1 as u16) * credit_unit + 
         (gp2 as u16) * credit_unit + 
         (gp3 as u16) * credit_unit +   
         (gp4 as u16) * credit_unit + 
