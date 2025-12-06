@@ -138,6 +138,8 @@ To enhance your development environment, install the following extensions:
 5. [Move Syntax by Damir Shamanaev](https://marketplace.visualstudio.com/items?itemName=damirka.move-syntax)
 
 ---
+- [Now you can create your first move package here](/2-your-first-package/first-package.md)
+---
 
 ## Video Guide
 
