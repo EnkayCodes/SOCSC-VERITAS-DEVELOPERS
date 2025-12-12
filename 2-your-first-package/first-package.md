@@ -171,8 +171,12 @@ $ sui move test test_hello
 
 Watch this video guide for additional help:
 
-[![Install Sui on Windows](https://img.youtube.com/vi/owSlmn_-p3I/0.jpg)](https://youtu.be/Oh_Q6LTKmK4)
+[![Get Started with Move](https://img.youtube.com/vi/owSlmn_-p3I/0.jpg)](https://youtu.be/Oh_Q6LTKmK4)
 
+---
+
+---
+- [Variable, primitive types and booleans in move](/3-variable-primitive-types-and-bool/README.md)
 ---
 
 For Move coding conventions, see: [Sui Move Concepts](https://docs.sui.io/concepts/sui-move-concepts/conventions)

@@ -155,15 +155,6 @@ Copy and paste this into your project:
 module cgpa_calc::cgpa {
     use std::debug;
 
-    public fun calculate_cgpa() {
-        // Step 1: Store scores as u8
-        let score1: u8 = 78;
-
-        // Step 2: Cast to u16 for safe arithmetic
-        let score1_u16 = c1 as u16;
-
-        // Step 3: Calculate total score
-       
         // Helper: convert score to grade point
         fun grade_point(score: u8): u8 {
             if (score >= 70) {
@@ -178,6 +169,16 @@ module cgpa_calc::cgpa {
                 0
             }
         }
+
+    public fun calculate_cgpa() {
+        // Step 1: Store scores as u8
+        let score1: u8 = 78;
+
+        // Step 2: Cast to u16 for safe arithmetic
+        let score1_u16 = c1 as u16;
+
+        // Step 3: Calculate total score
+       
 
         // Step 4: Convert scores into grade points (GP)
         let gp1: u8 = grade_point(c1);
@@ -215,6 +216,10 @@ or
 ```
 sui move build
 ```
+---
+
+---
+- [Basic functions](/4-basic-functions/basic-functions.md)
 ---
 
 ## Additional Resources

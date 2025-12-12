@@ -28,6 +28,8 @@ Complete Move packages you can explore, clone, and modify.
 ### To get started follow these steps
 - [1a. Install SUI on windows](./1a-installing-sui-on-windows/README.md)
 - [2. Create your First package](./2-your-first-package/first-package.md)
+- [3. Variable, primitive types and booleans in move](/3-variable-primitive-types-and-bool/README.md)
+- [4. Basic functions](/4-basic-functions/basic-functions.md)
 
 ---
 
